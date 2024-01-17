@@ -1,62 +1,62 @@
 {
     "API": {
-        "base_api": "https://poe.ninja/api/data/{category}overview?league={league}&type={type}",
+        "base_api": "https://poe.ninja/api/data/{group}overview?league={league}&type={category}",
         "league": "Affliction",
         "currency": {
-            "category": "currency",
-            "type": "Currency"
+            "group": "currency",
+            "category": "Currency"
         },
         "fragment": {
-            "category": "currency",
-            "type": "Fragment"
+            "group": "currency",
+            "category": "Fragment"
         },
         "oil": {
-            "category": "item",
-            "type": "Oil"
+            "group": "item",
+            "category": "Oil"
         },
         "incubator": {
-            "category": "item",
-            "type": "Incubator"
+            "group": "item",
+            "category": "Incubator"
         },
         "scarab": {
-            "category": "item",
-            "type": "Scarab"
+            "group": "item",
+            "category": "Scarab"
         },
         "fossil": {
-            "category": "item",
-            "type": "Fossil"
+            "group": "item",
+            "category": "Fossil"
         },
         "resonator": {
-            "category": "item",
-            "type": "Resonator"
+            "group": "item",
+            "category": "Resonator"
         },
         "essence": {
-            "category": "item",
-            "type": "Essence"
+            "group": "item",
+            "category": "Essence"
         },
         "divcard": {
-            "category": "item",
-            "type": "DivinationCard"
+            "group": "item",
+            "category": "DivinationCard"
         },
         "skillgem": {
-            "category": "item",
-            "type": "SkillGem"
+            "group": "item",
+            "category": "SkillGem"
         },
-        "basetype": {
-            "category": "item",
-            "type": "BaseType"
+        "basecategory": {
+            "group": "item",
+            "category": "Basecategory"
         },
         "map": {
-            "category": "item",
-            "type": "Map"
+            "group": "item",
+            "category": "Map"
         },
         "beast": {
-            "category": "item",
-            "type": "Beast"
+            "group": "item",
+            "category": "Beast"
         },
         "deliorb": {
-            "category": "item",
-            "type": "DeliriumOrb"
+            "group": "item",
+            "category": "DeliriumOrb"
         }
     }
 }
