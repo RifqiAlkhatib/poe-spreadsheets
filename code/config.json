@@ -1,3 +1,62 @@
 {
-    "league": "Affliction"
+    "API": {
+        "base_api": "https://poe.ninja/api/data/{category}overview?league={league}&type={type}",
+        "league": "Affliction",
+        "currency": {
+            "category": "currency",
+            "type": "Currency"
+        },
+        "fragment": {
+            "category": "currency",
+            "type": "Fragment"
+        },
+        "oil": {
+            "category": "item",
+            "type": "Oil"
+        },
+        "incubator": {
+            "category": "item",
+            "type": "Incubator"
+        },
+        "scarab": {
+            "category": "item",
+            "type": "Scarab"
+        },
+        "fossil": {
+            "category": "item",
+            "type": "Fossil"
+        },
+        "resonator": {
+            "category": "item",
+            "type": "Resonator"
+        },
+        "essence": {
+            "category": "item",
+            "type": "Essence"
+        },
+        "divcard": {
+            "category": "item",
+            "type": "DivinationCard"
+        },
+        "skillgem": {
+            "category": "item",
+            "type": "SkillGem"
+        },
+        "basetype": {
+            "category": "item",
+            "type": "BaseType"
+        },
+        "map": {
+            "category": "item",
+            "type": "Map"
+        },
+        "beast": {
+            "category": "item",
+            "type": "Beast"
+        },
+        "deliorb": {
+            "category": "item",
+            "type": "DeliriumOrb"
+        }
+    }
 }

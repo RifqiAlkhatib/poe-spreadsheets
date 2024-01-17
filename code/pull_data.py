@@ -9,8 +9,9 @@ import pandas as pd
 with open("../code/config.json", "r") as j:
     config = json.load(j)
 
-league = config['league']
-URL = f"https://poe.ninja/api/data/currencyoverview?league={league}&type=Currency"
+base_api = config["API"]["base_api"]
+league = config["API"]["league"]
+URL = base_api.format(category="currency", league=league, type="Currency")
 
 
 def pull_currency_data(url):
@@ -53,8 +54,12 @@ def extract_data(currency_raw):
     return pd.DataFrame(final_data)
 
 
-if __name__ == "__main__":
+def main():
     currency_raw = pull_currency_data(URL)
     final_data = extract_data(currency_raw)
 
     final_data.to_csv("../data/final_data.csv", index=False)
+
+
+if __name__ == "__main__":
+    main()
