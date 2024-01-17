@@ -2,6 +2,9 @@
     "API": {
         "base_api": "https://poe.ninja/api/data/{group}overview?league={league}&type={category}",
         "league": "Affliction",
+        "valid_categories": [
+            "currency", "fragment", "oil", "incubator", "scarab", "fossil", "resonator", "essence", "divcard", "skillgem", "basetype", "map", "beast", "deliorb"
+        ],
         "currency": {
             "group": "currency",
             "category": "Currency"
@@ -42,9 +45,9 @@
             "group": "item",
             "category": "SkillGem"
         },
-        "basecategory": {
+        "basetype": {
             "group": "item",
-            "category": "Basecategory"
+            "category": "BaseType"
         },
         "map": {
             "group": "item",

@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from typing import Dict
+from pathlib import Path
 
 import requests
 import json
@@ -72,11 +73,15 @@ class PoeNinja:
             return pd.DataFrame()
 
 
-def main():    
-    currency = PoeNinja(category="currency")
-    final_data = currency.pull_data()
+def main():
+    for cat in config["API"]["valid_categories"]:
+        print(f"Pulling {cat} data...")
+        currency = PoeNinja(category=cat)
+        final_data = currency.pull_data()
 
-    final_data.to_csv("../data/_final_data.csv", index=False)
+        path = f"../data/API/{cat}.csv"
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        final_data.to_csv(path, index=False)
 
 
 if __name__ == "__main__":
